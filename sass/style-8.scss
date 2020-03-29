@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 body,
 button,
 input,
@@ -6,17 +6,20 @@ textarea {
   color: black;
   font-family: 'Asap' , sans-serif;
   font-size: 16px;
-  line-height: 1.8; }
+  line-height: 1.8;
+}
 
 body {
   margin: 0;
   background-color: #ededed;
-  font-family: 'Asap', sans-serif; }
+  font-family: 'Asap', sans-serif;
+}
 
 img {
   display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 footer {
   background-color: #000;
@@ -24,81 +27,100 @@ footer {
   text-align: center;
   padding: 1.5em;
   font-size: 1.2em;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 header {
-  background-color: #000; }
+  background-color: #000;
+}
 
-.sidebar-right {
+.sidebar-right{
   background-color: #ededed;
-  color: white; }
+  color: white;
+}
 
 h1 {
-  color: red; }
+  color: red;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 pre {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
 /* Todo elemento que este por debajo */
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1120px){
+
   .content-area {
-    display: flex; }
+    display: flex;
+  }
 
   .sidebar-right {
-    flex: 0 0 320px; }
+    flex: 0 0 320px;
+  }
 
   .site-title {
-    font-size: 4em; } }
+    font-size: 4em;
+  }
+
+}
+
 /***********************
 START THE HEADER STYLES 
 ************************/
+
 /* Definimos todo el alto de la box que contiene el header */
-.site-header {
+.site-header{
   height: 400px;
   display: flex;
-  flex-flow: column;
-  /* Cambia el eje principal del elemento contenedor */ }
+  flex-flow: column; /* Cambia el eje principal del elemento contenedor */
+}
 
 .site-info {
-  flex-grow: 1;
-  /* Al ser un solo elemento coge todo el alto */
+  flex-grow: 1; /* Al ser un solo elemento coge todo el alto */
   display: flex;
   flex-flow: wrap column;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.site-title {
+.site-title{
   margin: 0;
   font-size: 2em;
   font-weight: 300;
   text-align: center;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .site-description {
   text-align: center;
   color: #f6d200;
   font-size: 1.2em;
   margin-top: -1em;
-  font-style: italic; }
+  font-style: italic;
+}
 
-/*barra de navegaci├│n del menu*/
-.main-menu {
+/*barra de navegación del menu*/ 
+.main-menu{
   padding: 1em 1em;
   color: black;
-  background-color: #f6d200; }
+  background-color: #f6d200;
+}
 
 /*our menus styles*/
 .main-menu-section {
   padding-bottom: 2em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+}
 
 .main-menu ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .main-menu li a {
   text-decoration: none;
@@ -107,271 +129,361 @@ START THE HEADER STYLES
   font-weight: bold;
   padding: .6em 1em;
   display: block;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .main-menu li a:hover {
   background-color: #000;
-  color: yellow; }
+  color: yellow;
+}
 
 @media screen and (min-width: 810px) {
+
   .main-menu ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center; }
+    text-align: center;
+  }
 
   .main-menu ul li {
     flex-grow: 1;
     flex-basis: auto;
-    flex-shrink: 0; } }
+    flex-shrink: 0;
+  }
+
+}
+
 /********************** 
 END THE HEADER STYLES 
 ***********************/
+
+
 /*********************
  START THE POST STYLES
 **********************/
+
 .main-content-area {
-  padding: 2em; }
+  padding: 2em;
+}
 
 .post {
   background-color: white;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 .post a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .post-content {
-  padding: 0 40px 20px; }
+  padding: 0 40px 20px;
+}
 
-.post-content h2 {
+.post-content h2{
   background-color: #f6d200;
   color: black;
   padding: 20px;
   text-align: center;
-  margin: 0 -40px 30px; }
+  margin: 0 -40px 30px;
+}
 
-@media screen and (min-width: 810px) {
-  /*Contenedor Padre de todos los Post*/
+@media screen and (min-width: 810px){
+
+  /*Contenedor Padre de todos los Post*/  
   .posts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
   .post {
-    flex-basis: 49%; } }
-@media screen and (min-width: 1120px) {
+    flex-basis: 49%;
+  }
+}
+
+@media screen and (min-width: 1120px){
+
   .post-one-third {
-    flex-basis: 32%; }
+    flex-basis: 32%;
+  }
 
   .post-half {
-    flex-basis: 49%; }
+    flex-basis: 49%;
+  }
 
-  .post-full {
-    flex-basis: 100%; } }
+  .post-full{
+    flex-basis: 100%;
+  }
+}
+
 /*********************
 END THE POST STYLES
 *********************/
+
 /*********************
 START WATCH SECTION STYLES
 *********************/
+
 .section-header {
   color: black;
   font-size: 3em;
-  text-align: center; }
+  text-align: center;
+}
 
 .watch-card {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
-.watch-content {
+.watch-content{
   background-color: black;
   color: white;
-  padding: 3em; }
+  padding: 3em;
+}
 
 .watch-content h2 {
   font-size: 2em;
   font-weight: 300;
   margin: 0;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
 
 .movie-info {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .movie-info span {
-  padding-right: 1.5em; }
+  padding-right: 1.5em;
+}
 
 .movie-story {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 .watch-content a {
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 810px){
+
   /*Contenedor padre 1-nivel*/
   .watch-card {
-    display: flex; }
+    display: flex;
+  }
 
-  /*Elemento hijo 1-nivel*/
-  .img-right {
-    order: 2; }
+  /*Elemento hijo 1-nivel*/ 
+  .img-right{
+    order: 2;
+  }
 
   /*Contenedor padre 2-nivel*/
-  .watch-content {
+  .watch-content{
     display: flex;
     flex-flow: column;
-    justify-content: center; } }
+    justify-content: center;
+  }
+
+}
 /*********************
 END WATCH SECTION STYLES
 *********************/
+
 /*********************
 START SECTION DOWNLOAD STYLES
 *********************/
-.download-card {
-  margin-bottom: 1em; }
 
-.download-content {
-  background-color: white; }
+.download-card{
+  margin-bottom: 1em;
+}
+
+.download-content{
+  background-color: white;
+}
 
 .download-content a {
   background-color: black;
   color: white;
-  padding: 1em 2em;
+  padding: 1em 2em; 
   text-decoration: none;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
 
 .download-content a i {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+}
 
 .download-info {
-  padding: 1em 2em; }
+  padding: 1em 2em;
+}
 
 .download-info h4 {
-  margin: 0; }
+  margin: 0;
+}
 
 .download-info p {
   margin: 0;
-  font-size: .9em; }
+  font-size: .9em;
+}
 
 .download-cast img {
   height: 60px;
   width: 60px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
-.download-rating {
+.download-rating{
   background-color: #f6d200;
   padding: 1em;
   color: black;
-  font-size: .9em; }
+  font-size: .9em;
+}
 
 .download-rating .rate {
   font-size: 2.5em;
   font-weight: bold;
-  margin-bottom: -0.25em; }
+  margin-bottom: -0.25em;
+}
 
 .download-content {
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
 
-.download-content a, .download-rating {
+}
+
+.download-content a , .download-rating {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+}
 
-.download-genre, .download-cast {
+.download-genre , .download-cast {
   display: flex;
   flex-flow: wrap;
-  align-items: center; }
+  align-items: center;
+}
 
 .download-info h4 {
-  flex-basis: 20%; }
+  flex-basis: 20%; 
+}
 
 .download-genre {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
-@media screen and (min-width: 810px) {
-  .download-content {
+@media screen and (min-width: 810px){
+
+  .download-content{
     display: flex;
-    flex-flow: row; }
+    flex-flow: row;
+  }
 
-  /*panel nube y panel 8.7*/
-  .download-content a, .download-rating {
-    flex-grow: 1; }
+  /*panel nube y panel 8.7*/ 
+  .download-content a , .download-rating{
+    flex-grow: 1;
+  }
 
   /*cara de los actores*/
   .download-info {
-    flex-grow: 2; } }
+    flex-grow: 2;
+  }
+
+}
+
 /*********************
 END SECTION DOWNLOAD STYLES
 *********************/
+
 /*********************
 START SECTION GALLERY STYLES
 *********************/
+
 .gallery-imgs {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px; }
+  margin-left: -8px;
+}
 
 .gallery-img {
   height: 250px;
   flex-grow: 1;
-  margin: 0 0 8px 8px; }
+  margin: 0 0 8px 8px;
+}
 
-.gallery-img img {
+.gallery-img img{
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
-.gallery-img:nth-child(4n+1) {
-  flex-basis: 250px; }
+.gallery-img:nth-child(4n+1){
+  flex-basis: 250px;
+}
 
-.gallery-img:nth-child(4n+2) {
-  flex-basis: 325px; }
+.gallery-img:nth-child(4n+2){
+  flex-basis: 325px;
+}
 
-.gallery-img:nth-child(4n+3) {
-  flex-basis: 180px; }
+.gallery-img:nth-child(4n+3){
+  flex-basis: 180px;
+}
 
-.gallery-img:nth-child(4n+4) {
-  flex-basis: 380px; }
+.gallery-img:nth-child(4n+4){
+  flex-basis: 380px;
+}
 
 /*********************
 END SECTION GALLERY STYLES
 *********************/
+
+
 /*********************
 START SIDEBAR STYLES
 *********************/
+
 .sidebar-right {
   padding: 2em;
-  color: #000; }
+  color: #000;
+}
 
 .widget {
   background-color: #fff;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+}
 
 .widget-content {
-  padding: .5em 2em; }
+  padding: .5em 2em;
+}
 
 .sidebar-right ul {
   list-style-type: none;
-  padding-left: 1em; }
+  padding-left: 1em;
+}
 
 .sidebar-right ul a {
   display: block;
   padding-bottom: .4em;
   color: black;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*********************
 END SIDEBAR STYLES
 *********************/
-@media screen and (min-width: 810px) and (max-width: 1120px) {
+
+
+@media screen and (min-width: 810px) and (max-width: 1120px){
+
   .sidebar-right {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
   .widget {
-    flex-basis: 48.8%; } }
+    flex-basis: 48.8%;
+  }
 
-/*# sourceMappingURL=style-8.css.map */
+}
